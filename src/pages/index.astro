@@ -1,0 +1,390 @@
+---
+import FlashSaleCard from "../components/cards/FlashSaleCard.astro";
+import TopHundredCard from "../components/cards/TopHundredCard.astro";
+import TrendingMustHaveCard from "../components/cards/TrendingMustHaveCard.astro";
+import Layout from "../layouts/Layout.astro";
+// import Card from '../components/Card.astro';
+---
+
+<Layout title="Welcome to Astro.">
+  <div class="d-flex justify-content-between px-5 py-3 d-none d-md-flex">
+    <p class="text-warning fs-6 fw-normal lh-sm">Woman</p>
+    <p class="text-secondary fs-6 fw-normal lh-sm">Male</p>
+    <p class="text-secondary fs-6 fw-normal lh-sm">Mother-Child</p>
+    <p class="text-secondary fs-6 fw-normal lh-sm">Home & Furniture</p>
+    <p class="text-secondary fs-6 fw-normal lh-sm">Super market</p>
+    <p class="text-secondary fs-6 fw-normal lh-sm">Cosmetics</p>
+    <p class="text-secondary fs-6 fw-normal lh-sm">Shoe & Bag</p>
+    <p class="text-secondary fs-6 fw-normal lh-sm">Electronic</p>
+    <p class="text-secondary fs-6 fw-normal lh-sm">Sport & Outdoor</p>
+    <p class="text-secondary fs-6 fw-normal lh-sm">Best seller</p>
+  </div>
+  <!-- Header Image -->
+
+  <div
+    class=""
+  >
+    <div>
+      <img
+        class="w-100 d-none d-md-none d-lg-block"
+        src="/assets/images/svg/header_img.svg"
+        alt=""
+      />
+    </div>
+    <div>
+      <img
+        class="w-100 d-none d-md-block d-lg-none"
+        src="/assets/images/svg/header_md_img.svg"
+        alt=""
+      />
+    </div>
+    <div class="w-75 d-flex d-md-none d-lg-none mt-4">
+      <img style="width: 370px; padding-left: 10px; padding-right: 10px;" src="/assets/images/png/never_ending_summer-sm.png" alt="" />
+    </div>
+    <div class="w-75 d-flex d-md-none d-lg-none mt-3">
+      <img style="width: 370px; padding-left: 10px; padding-right: 10px;" src="/assets/images/png/everyone_love_sm.png" alt="" />
+    </div>
+  </div>
+
+  <!-- Card section -->
+  <div>
+    <div class="d-flex justify-content-between px-5 pt-5 pb-md-5 py-lg-5">
+      <h3>Flash Sales</h3>
+      <div class="d-flex align-items-center justify-content-center gap-2">
+        <p class="fs-6 fw-normal lh-1 m-0">View all</p>
+        <img src="/assets/images/png/right_arrow.png" alt="" />
+      </div>
+    </div>
+    <div
+      class="d-flex justify-content-between px-5 mx-auto flex-wrap container-fluid gap-5"
+    >
+      <FlashSaleCard
+        img="/assets/images/png/bag.png"
+        title="Tonny Black"
+        desc="Shoulder bag-White-Plain"
+      />
+      <FlashSaleCard
+        img="/assets/images/png/reebok.png"
+        title="Reebok"
+        desc="Women’s Powder sneakers"
+      />
+      <FlashSaleCard
+        img="/assets/images/png/patso.png"
+        title="Patso"
+        desc="Shoulder bag-Pink-Plain"
+      />
+      <FlashSaleCard
+        img="/assets/images/png/sketchers.png"
+        title="Sketchers"
+        desc="Sport-shoe 2102"
+      />
+    </div>
+  </div>
+
+  <div>
+    <div class="d-flex justify-content-between px-5 pt-5 pb-md-5 py-lg-5">
+      <h3>Trending must-haves</h3>
+      <div class="d-flex align-items-center justify-content-center gap-2">
+        <p class="fs-6 fw-normal lh-1 m-0">View all</p>
+        <img src="/assets/images/png/right_arrow.png" alt="" />
+      </div>
+    </div>
+    <div
+      class="d-flex justify-content-between md-flex md-flex-col md-align-items-center md-justify-content-center px-5 md-px-3 mx-auto flex-nowrap flex-md-wrap flex-lg-wrap container-fluid gap-2 overflow-auto"
+    >
+      <div class="shadow mt-3 w-sm-100">
+        <img
+          src="/assets/images/png/calvin_klein_one.png"
+          class="rounded d-block d-md-none d-lg-block"
+          alt="..."
+        />
+        <img
+          src="/assets/images/png/calvin_klein__md_one.png"
+          class="d-none d-md-block d-lg-none"
+          style="width:714px"
+          alt=""
+        />
+        <div
+          class="d-flex align-items-center justify-content-center gap-3 px-3 bg-dark"
+        >
+          <div class="pt-2">
+            <h5 class="card-title text-white">Cool & Sexy Calvin Klein</h5>
+            <p class="text-white-50 mt-3">Shoulder bag-White-Plain</p>
+          </div>
+          <div>
+            <button class="bg-dark rounded p-1 text-white">$89 Shop Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="shadow mt-3">
+        <img
+          src="/assets/images/png/calvin_klein_two.png"
+          class="rounded d-block d-md-none d-lg-block"
+          alt="..."
+        />
+        <img
+          src="/assets/images/png/calvin_klein_md_two.png"
+          class="d-none d-md-block d-lg-none"
+          style="width:714px"
+          alt=""
+        />
+        <div
+          class="d-flex align-items-center justify-content-center gap-3 px-3 bg-dark"
+        >
+          <div class="pt-2">
+            <h5 class="card-title text-white">Cool & Sexy Calvin Klein</h5>
+            <p class="text-white-50 mt-3">Shoulder bag-White-Plain</p>
+          </div>
+          <div>
+            <button class="bg-dark rounded p-1 text-white">$89 Shop Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="shadow mt-3">
+        <img
+          src="/assets/images/png/beige_coat_zara.png"
+          class="rounded d-block d-md-none d-lg-block"
+          alt="..."
+        />
+        <img
+          src="/assets/images/png/beige_coat_md_zara.png"
+          class="d-none d-md-block d-lg-none"
+          style="width:714px"
+          alt=""
+        />
+        <div
+          class="d-flex align-items-center justify-content-center gap-3 px-3 bg-dark"
+        >
+          <div class="pt-2">
+            <h5 class="card-title text-white">Cool & Sexy Calvin Klein</h5>
+            <p class="text-white-50 mt-3">Shoulder bag-White-Plain</p>
+          </div>
+          <div>
+            <button class="bg-dark rounded p-1 text-white">$89 Shop Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="d-flex justify-content-between px-5 pt-5 pb-md-5 py-lg-5">
+      <h3>Top100</h3>
+      <div class="d-flex align-items-center justify-content-center gap-2">
+        <p class="fs-6 fw-normal lh-1 m-0">View all</p>
+        <img src="/assets/images/png/right_arrow.png" alt="" />
+      </div>
+    </div>
+    <div
+      class="d-flex justify-content-between px-5 mx-auto flex-wrap container-fluid gap-5"
+    >
+      <TopHundredCard
+        img="/assets/images/png/mango.png"
+        title="Mango"
+        desc="Kimono & Caftan - Black - Regular fit"
+      />
+      <TopHundredCard
+        img="/assets/images/png/zara.png"
+        title="Zara"
+        desc="Midi top- Daily fit"
+      />
+      <TopHundredCard
+        img="/assets/images/png/uniqlo.png"
+        title="Uniqlo"
+        desc="Midi atlas Slim fit - bohemian"
+      />
+      <TopHundredCard
+        img="/assets/images/png/mango_dress.png"
+        title="Mango dress"
+        desc="Kimono & Caftan - Colorful - Night club fit"
+      />
+    </div>
+  </div>
+
+  <div class="d-lg-flex flex-md-wrap flex-lg-nowrap d-none d-md-block">
+    <div class="d-flex px-5 mx-auto mt-5">
+      <div
+        class="bg-danger d-flex d-flex-col justify-content-center align-items-center"
+      >
+        <div class="ps-5">
+          <h2 class="text-white pl-5 fs-1 fw-bold w-75">Never-Ending Summer</h2>
+          <p class="text-white w-75">Throwback Shirts & all-day dressed</p>
+          <p class="text-decoration-underline text-white w-75">
+            Exlopre all category
+          </p>
+        </div>
+      </div>
+      <div>
+        <img src="/assets/images/png/never_ending_summer.png" alt="" />
+      </div>
+    </div>
+
+    <div class="d-flex px-5 mx-auto mt-5">
+      <div
+        class="bg-primary d-flex d-flex-col justify-content-center align-items-center"
+      >
+        <div class="ps-5">
+          <h2 class="text-white pl-5 fs-1 fw-bold w-75">
+            The most famous sport brands
+          </h2>
+          <p class="text-white w-75">Get in gym essentials</p>
+          <p class="text-decoration-underline text-white w-75">
+            Exlopre all category
+          </p>
+        </div>
+      </div>
+      <div>
+        <img src="/assets/images/png/the_most_famous_sport_brands.png" alt="" />
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="d-flex align-items-center justify-content-between px-5 mx-auto py-3 mt-5 d-none d-md-flex"
+    style="background:#F7DDD0"
+  >
+    <div>
+      <img src="/assets/images/png/left_arrow.png" alt="" />
+    </div>
+    <div>
+      <h4 class="text-muted">MagSafe</h4>
+      <p class="text-muted">
+        Snap on a magnetic case, wallet, or both. And get faster wireless
+        charging.
+      </p>
+    </div>
+    <div>
+      <div>
+        <img src="/assets/images/png/iphone_one.png" alt="" />
+      </div>
+    </div>
+    <div>
+      <img src="/assets/images/png/right_arrow_two.png" alt="" />
+    </div>
+  </div>
+
+
+  <div class="d-lg-flex flex-md-wrap flex-lg-nowrap d-none d-md-block pb-5">
+    <div class="d-flex px-5 mx-auto mt-5">
+      <div
+        class="d-flex d-flex-col justify-content-center align-items-center"
+        style="background:#D11FB5"
+      >
+        <div class="ps-5">
+          <h2 class="text-white pl-5 fs-1 fw-bold w-75">
+            The Pinky Barbie Edition
+          </h2>
+          <p class="text-white w-75">Lets play dress up</p>
+          <p class="text-decoration-underline text-white w-75">
+            Exlopre all category
+          </p>
+        </div>
+      </div>
+      <div>
+        <img class="h-100" src="/assets/images/png/pinky_barbie.png" alt="" />
+      </div>
+    </div>
+
+    <div class="d-flex px-5 mx-auto mt-5">
+      <div
+        class="bg-primary d-flex d-flex-col justify-content-center align-items-center"
+      >
+        <div class="ps-5">
+          <h2 class="text-white pl-5 fs-1 fw-bold w-75">
+            Best Sellers Everyone Love
+          </h2>
+          <p class="text-white w-75">poolside glam include</p>
+          <p class="text-decoration-underline text-white w-75">
+            Exlopre all category
+          </p>
+        </div>
+      </div>
+      <div>
+        <img class="h-100" src="/assets/images/png/everyone_love.png" alt="" />
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+
+  <div
+    style="background:#D1E2EB"
+    class="d-flex flex-column position-relative justify-content-center align-items-center mt-5 gap-5"
+  >
+    <div
+      class="bg-secondary top-5 right-50 left-50 w-50 position-absolute bottom-50 mb-5 mt-5 d-flex flex-column justify-content-center align-items-center rounded-3 d-none d-md-flex"
+    >
+      <h3 class="text-white">Luminae Store</h3>
+      <p class="text-white">
+        Register your email not to miss the last minutes off+ Free delivery
+      </p>
+      <div class="d-flex justify-content-center align-items-center pb-4">
+        <div class="w-75">
+          <input type="text" placeholder="Enter your email" />
+        </div>
+        <div class="w-25">
+          <img src="/assets/images/png/send_icon.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <div
+      class="d-flex justify-content-center align-items-center gap-5 pt-5 mt-5 flex-wrap"
+    >
+      <div>
+        <h6 class="fw-bolder">Company</h6>
+        <p>About Us</p>
+        <p>Our Store</p>
+        <p>Contact us</p>
+      </div>
+      <div>
+        <h6 class="fw-bolder">Career Opportunities</h6>
+        <p>Selling Programs</p>
+        <p>Advertise</p>
+        <p>Cooperation</p>
+      </div>
+      <div class="mt-4">
+        <h6 class="fw-bolder">How to Buy</h6>
+        <p>Making Payments</p>
+        <p>Delivery Options</p>
+        <p>Buyer Protection</p>
+        <p>New User Guide</p>
+      </div>
+      <div>
+        <h6 class="fw-bolder">Help</h6>
+        <p>Contacts Us</p>
+        <p>FAQ</p>
+        <p>Privacy Policy</p>
+      </div>
+    </div>
+  </div>
+  <div class="">
+    <div
+      class="d-flex align-items-center justify-content-center justify-content-md-between px-5 py-3"
+    >
+      <div>
+        <img src="/assets/images/png/banking_icon.png" alt="" />
+      </div>
+      <div
+        class="d-flex justify-content-center justify-content-md-between align-items-center gap-1 d-none d-md-flex"
+      >
+        <p class="m-0 text-secondary">English</p>
+        <div>
+          <img src="/assets/images/png/down_arrow.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <div
+      class="d-flex justify-content-center justify-content-md-between align-items-center p-5 border-top"
+    >
+      <div
+        class="d-flex justify-content-between align-items center gap-5 d-none d-md-flex"
+      >
+        <p>165-179 Forster Road City of Monash, Melbourne, Australia</p>
+        <p class="">©2023 Copyright in reserved for lumine shop</p>
+      </div>
+      <div>
+        <img src="/assets/images/png/social_media.png" alt="" />
+      </div>
+    </div>
+  </div>
+</Layout>

@@ -1,0 +1,17 @@
+---
+const { time, img, title, desc } = Astro.props;
+---
+
+<div class="shadow mt-3">
+  <img src={img} class="rounded md-d-none d-lg-block" alt="..." />
+  <img src="" alt="">
+  <div class="d-flex align-items-center justify-content-center gap-3 px-3 bg-dark">
+    <div class="pt-2">
+      <h5 class="card-title text-white">{title}</h5>
+      <p class="text-white-50 mt-3">{desc}</p>
+    </div>
+    <div>
+        <button class="bg-dark rounded p-1 text-white">$89 Shop Now</button>
+    </div>
+  </div>
+</div>

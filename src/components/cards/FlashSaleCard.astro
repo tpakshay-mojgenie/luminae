@@ -1,0 +1,41 @@
+---
+const { time, img, title, desc } = Astro.props;
+---
+
+<div class=" shadow mt-5 mt-md-1 rounded" style="width: 18rem;">
+  <div class="d-flex flex-column">
+    <p class="text-center pt-2">Deal of the Day</p>
+    <div class="d-flex justify-content-center align-items-center gap-2">
+      <div>
+        <h5>12</h5>
+        <p>hour</p>
+      </div>
+      <div>
+        <h5>: 13</h5>
+        <p>min</p>
+      </div>
+      <div>
+        <h5>: 12</h5>
+        <p>sec</p>
+      </div>
+    </div>
+  </div>
+  <img src={img} class="card-img-top" alt="..." />
+  <div class="d-flex flex-column justify-content-center align-items-start px-5">
+    <div class="pt-2">
+      <h5 class="card-title">{title}</h5>
+      <p class="card-text text-muted pt-2">{desc}</p>
+    </div>
+    <div class="d-flex justify-content-start align-items-center gap-3 pt-2">
+      <div>
+        <img src="/assets/images/png/star_icon.png" alt="" />
+      </div>
+      <p class="text-muted m-0">(54)</p>
+    </div>
+    <div class="d-flex gap-3 pt-3">
+      <p class="text-danger">$69.99</p>
+      <p class="text-decoration-line-through text-muted">$129.99</p>
+      <p class="bg-success p-1 rounded text-white">-40%</p>
+    </div>
+  </div>
+</div>
